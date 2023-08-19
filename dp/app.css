@@ -1,0 +1,76 @@
+/*
+import React, { useState } from 'react';
+
+function Cart() {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
+  };
+
+  return (
+    <div>
+      <h2>Корзина</h2>
+      <ul>
+        {cartItems.map((item, index) => (
+          <li key={index}>{item.name}</li>
+        ))}
+      </ul>
+      кошик
+    </div>
+  );
+}
+
+export default Cart;
+
+
+ рейтинг
+import React, { useState } from 'react';
+
+function ProductRating() {
+  const [rating, setRating] = useState(0);
+
+  const handleRatingChange = (newRating) => {
+    setRating(newRating);
+  };
+
+  return (
+    <div>
+      <h2>Рейтинг товара</h2>
+      <p>Теперешній показник: {rating}</p>
+    </div>
+  );
+}
+
+export default ProductRating;
+
+
+  вподобалось
+
+
+ import React, { useState } from 'react';
+
+function LikeButton() {
+  const [liked, setLiked] = useState(false);
+  const [likesCount, setLikesCount] = useState(0);
+
+  const handleLikeClick = () => {
+    if (!liked) {
+      setLikesCount(likesCount + 1);
+    }
+    setLiked(!liked);
+  };
+
+  return (
+    <div>
+      <h2>Сподобалось</h2>
+      <button onClick={handleLikeClick}>
+        {liked ? 'сподобалось' : 'сподобалось'}
+      </button>
+      <p>Количество лайков: {likesCount}</p>
+    </div>
+  );
+}
+
+export default LikeButton;
+

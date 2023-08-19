@@ -1,0 +1,18 @@
+/* Widget.css */
+
+.widget {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navigation-links img {
+    max-width: 24px;
+    height: auto;
+  }
+  

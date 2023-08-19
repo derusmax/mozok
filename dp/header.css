@@ -1,0 +1,36 @@
+/* Header.css */
+
+.header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .company-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  
+  .nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav a:last-child {
+    margin-right: 0;
+  }
+  
